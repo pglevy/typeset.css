@@ -22,3 +22,11 @@ These are a few things I wanted to keep in mind:
 - **Respect reader’s font adjustments.** Although Brown doesn't mention accessibility directly in the Readers are Typographers Too section, he does say that typography on the web “has the potential to work for everyone by default.” I intentionally wanted to ensure that things like font sizes are relative to any preferences the reader has set on whatever device they're using.
 - **Play nicely with other frameworks.** Since this is not a complete framework, and is intended for use on top of other tools like normalize.css or Bootstrap, my goal was to progressively enhance what you're already using.
 - **Allow customization from the markup.** Keeping in mind the separation of concerns you have between code and content in most content management systems, I wanted to allow for easy adjustments of the defaults with a few settings you could access without mucking around in the stylesheet.
+
+## Usage
+
+Copy and paste into your project or load it from the jsDelivr CDN:
+
+```
+https://cdn.jsdelivr.net/gh/pglevy/typeset.css@v1.0.0/typeset.css
+```
