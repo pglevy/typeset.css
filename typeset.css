@@ -11,7 +11,7 @@
 
 /* Default values if not custom settings are added to the text container */
 
-[data-atypesetter] {
+[data-typeset] {
     --heading-stack: var(--sans-serif-stack);
     --body-stack: var(--serif-stack);
     --size: 1.2rem;
@@ -24,7 +24,7 @@
 
 /* Override default values by adding custom CSS properties to text container, for example `style="--size: 1.2rem;" */
 
-[data-atypesetter] {
+[data-typeset] {
     --font-family-heading: var(--heading-stack);
     --font-family-body: var(--body-stack);
     --base-font-size: var(--size);
@@ -37,7 +37,7 @@
 
 /* Set the font, size, measure, and line height for the text container. */
 
-[data-atypesetter] {
+[data-typeset] {
     font-family: var(--font-family);
     font-size: var(--base-font-size);
     max-width: var(--base-measure);
@@ -48,17 +48,17 @@
 
 /* Font size, line height, and measure for body content elements and headings 4 and below */
 
-[data-atypesetter] p,
-[data-atypesetter] h4,
-[data-atypesetter] h5,
-[data-atypesetter] h6,
-[data-atypesetter] li,
-[data-atypesetter] blockquote,
-[data-atypesetter] dl,
-[data-atypesetter] pre,
-[data-atypesetter] code,
-[data-atypesetter] kbd,
-[data-atypesetter] samp {
+[data-typeset] p,
+[data-typeset] h4,
+[data-typeset] h5,
+[data-typeset] h6,
+[data-typeset] li,
+[data-typeset] blockquote,
+[data-typeset] dl,
+[data-typeset] pre,
+[data-typeset] code,
+[data-typeset] kbd,
+[data-typeset] samp {
     font-family: var(--body-stack);
     font-size: var(--base-font-size);
     line-height: var(--base-line-height);
@@ -68,7 +68,7 @@
 
 /* Prevent small from getting too small */
 
-[data-atypesetter] small {
+[data-typeset] small {
     font-size: clamp(calc(var(--base-font-size) * 0.80), calc(var(--base-font-size) / var(--font-size-scale)), var(--base-font-size));
     line-height: calc(var(--base-line-height) * var(--line-height-scale));
 }
@@ -77,7 +77,7 @@
 /* Optional “lead” sizing for first paragraph */
 /* To opt out, add `data-atypesetter-nolead` to text container */
 
-[data-atypesetter] p:first-of-type {
+[data-typeset] p:first-of-type {
     font-size: calc(var(--base-font-size) * var(--font-size-scale));
     line-height: calc(var(--base-line-height) / var(--line-height-scale));
     max-width: var(--base-measure);
@@ -92,19 +92,19 @@
 
 /* Font size and line height for main headings */
 
-[data-atypesetter] h1 {
+[data-typeset] h1 {
     font-family: var(--font-family-heading);
     font-size: calc(var(--base-font-size) * var(--font-size-scale) * var(--font-size-scale) * var(--font-size-scale));
     line-height: calc(var(--base-line-height) / var(--line-height-scale) / var(--line-height-scale) / var(--line-height-scale));
 }
 
-[data-atypesetter] h2 {
+[data-typeset] h2 {
     font-family: var(--font-family-heading);
     font-size: calc(var(--base-font-size) * var(--font-size-scale) * var(--font-size-scale));
     line-height: calc(var(--base-line-height) / var(--line-height-scale) / var(--line-height-scale));
 }
 
-[data-atypesetter] h3 {
+[data-typeset] h3 {
     font-family: var(--font-family-heading);
     font-size: calc(var(--base-font-size) * var(--font-size-scale));
     line-height: calc(var(--base-line-height) / var(--line-height-scale));
@@ -113,37 +113,37 @@
 
 /* Margins for most things and hyphen removal for headings */
 
-[data-atypesetter] p,
-[data-atypesetter] ul,
-[data-atypesetter] ol,
-[data-atypesetter] dl {
+[data-typeset] p,
+[data-typeset] ul,
+[data-typeset] ol,
+[data-typeset] dl {
     margin: 0 0 var(--base-font-size);
 }
 
-[data-atypesetter] blockquote {
+[data-typeset] blockquote {
     margin-top: 0;
     margin-bottom: var(--base-font-size);
 }
 
-[data-atypesetter] li {
+[data-typeset] li {
     margin: 0 0 calc(var(--base-font-size) / 2);
 }
 
-[data-atypesetter] dd {
+[data-typeset] dd {
     margin-bottom: calc(var(--base-font-size) / 2);
 }
 
-[data-atypesetter] h1 {
+[data-typeset] h1 {
     margin-top: 0;
     margin-bottom: calc(var(--base-font-size) / 2);
     hyphens: none;
 }
 
-[data-atypesetter] h2,
-[data-atypesetter] h3,
-[data-atypesetter] h4,
-[data-atypesetter] h5,
-[data-atypesetter] h6 {
+[data-typeset] h2,
+[data-typeset] h3,
+[data-typeset] h4,
+[data-typeset] h5,
+[data-typeset] h6 {
     margin-top: calc(var(--base-font-size) * 2);
     margin-bottom: calc(var(--base-font-size) / 2);
     hyphens: none;
@@ -159,8 +159,8 @@ li {
 
 
 /* List padding */
-[data-atypesetter] ul,
-[data-atypesetter] ol {
+[data-typeset] ul,
+[data-typeset] ol {
     padding-left: calc(var(--base-font-size) * 2);
 }
 
@@ -168,13 +168,13 @@ li {
 /* Responsive styling for larger screens by changing the scale. This keeps the same paragraph text size but allows for smaller headings on small screens and larger headings on large screens. */
 
 @media (min-width: 1024px) {
-    [data-atypesetter] {
+    [data-typeset] {
         --font-size-scale: 1.333;
     }
 }
 
 @media (min-width: 1400px) {
-    [data-atypesetter] {
+    [data-typeset] {
         --font-size-scale: 1.414;
         --base-measure: 88ex;
     }
