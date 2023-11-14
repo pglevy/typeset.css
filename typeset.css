@@ -75,7 +75,7 @@
 
 
 /* Optional “lead” sizing for first paragraph */
-/* To opt out, add `data-atypesetter-nolead` to text container */
+/* To opt out, add `data-typeset-nolead` to text container */
 
 [data-typeset] p:first-of-type {
     font-size: calc(var(--base-font-size) * var(--font-size-scale));
@@ -84,7 +84,7 @@
     hyphens: none;
 }
 
-[data-atypesetter-nolead] p:first-of-type {
+[data-typeset-nolead] p:first-of-type {
     font-size: var(--base-font-size);
     line-height: var(--base-line-height);
 }
