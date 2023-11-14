@@ -77,14 +77,14 @@
 /* Optional “lead” sizing for first paragraph */
 /* To opt out, add `data-atypesetter-nolead` to text container */
 
-[data-typeset] p:first-of-type {
+[data-typeset] h1 + p {
     font-size: calc(var(--base-font-size) * var(--font-size-scale));
     line-height: calc(var(--base-line-height) / var(--line-height-scale));
     max-width: var(--base-measure);
     hyphens: none;
 }
 
-[data-atypesetter-nolead] p:first-of-type {
+[data-atypesetter-nolead] h1 + p {
     font-size: var(--base-font-size);
     line-height: var(--base-line-height);
 }
@@ -96,6 +96,7 @@
     font-family: var(--font-family-heading);
     font-size: calc(var(--base-font-size) * var(--font-size-scale) * var(--font-size-scale) * var(--font-size-scale));
     line-height: calc(var(--base-line-height) / var(--line-height-scale) / var(--line-height-scale) / var(--line-height-scale));
+    max-width: none !important;
 }
 
 [data-typeset] h2 {

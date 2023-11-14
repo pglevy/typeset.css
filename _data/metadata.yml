@@ -1,0 +1,8 @@
+# Set the language for the site. Used for "html lang." Default is English.
+lang: en
+
+# Set a plain language title for the site.
+title: Typeset.css
+
+# Write a short description for the site. This is used for "meta description."
+description: A relational style sheet for better web typography
