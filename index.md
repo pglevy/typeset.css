@@ -26,6 +26,20 @@ These are a few things I wanted to keep in mind:
 ```
 https://cdn.jsdelivr.net/gh/pglevy/typeset.css@v1.0.1/typeset.css
 ```{: .color-bg-subtle .p-2 .mt-2 .d-block .rounded-2}
-2. Add `data-typeset`{: .color-bg-subtle .px-1 .rounded-2 } to a content parent element, like `body`{: .color-bg-subtle .px-1 .rounded-2 } or `main`{: .color-bg-subtle .px-1 .rounded-2 }.
+1. Add `data-typeset`{: .color-bg-subtle .px-1 .rounded-2 } to a content parent element, like `body`{: .color-bg-subtle .px-1 .rounded-2 } or `main`{: .color-bg-subtle .px-1 .rounded-2 }.
+1. Add overrides to default settings as needed, for example `style="--size: 1.15rem;`
+
+### Default Settings
+
+```
+--heading-stack: var(--sans-serif-stack);
+--body-stack: var(--serif-stack);
+--size: 1.2rem;
+--measure: 72ex;
+--height: 1.5;
+--size-scale: 1.25;
+--height-scale: 1.09;
+```
+{: .color-bg-subtle .p-2 .my-3 .d-block .rounded-2 }
 
 [View on GitHub](https://github.com/pglevy/typeset.css)
