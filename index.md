@@ -24,7 +24,7 @@ These are a few things I wanted to keep in mind:
 
 1. Copy and paste into your project or load it from the jsDelivr CDN:
 ```
-https://cdn.jsdelivr.net/gh/pglevy/typeset.css@v1.0.1/typeset.css
+https://cdn.jsdelivr.net/gh/pglevy/typeset.css@v1.0.2/typeset.css
 ```{: .color-bg-subtle .p-2 .mt-2 .d-block .rounded-2}
 1. Add `data-typeset`{: .color-bg-subtle .px-1 .rounded-2 } to a content parent element, like `body`{: .color-bg-subtle .px-1 .rounded-2 } or `main`{: .color-bg-subtle .px-1 .rounded-2 }.
 1. Add overrides to default settings as needed, for example `style="--size: 1.15rem;`
