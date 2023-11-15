@@ -1,1 +1,5 @@
 /* Add CSS rules to override Primer */
+
+code {
+    overflow: scroll;
+}
