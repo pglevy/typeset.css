@@ -1,6 +1,6 @@
 # Typeset.css
 
-A relational style sheet for better web typography
+A relational style sheet for better web typography. [Go to documentation and live type sample](https://pglevy.github.io/typeset.css/)
 
 ## Usage
 
@@ -22,5 +22,3 @@ https://cdn.jsdelivr.net/gh/pglevy/typeset.css@v1.0.2/typeset.css
 --size-scale: 1.25;
 --height-scale: 1.09;
 ```
-
-[View documentation and type sample](https://pglevy.github.io/typeset.css/)
